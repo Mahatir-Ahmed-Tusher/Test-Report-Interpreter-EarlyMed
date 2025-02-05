@@ -4,7 +4,7 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(
     page_title="EarlyMed - Test Report Interpreter",
-    page_icon="🏥",
+    page_icon="https://i.postimg.cc/vHZ4bWMx/logo.png",
     layout="wide",
     initial_sidebar_state="expanded"
 )
