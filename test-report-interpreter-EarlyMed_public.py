@@ -2,7 +2,6 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-# Set page config must be the first Streamlit command
 st.set_page_config(
     page_title="EarlyMed - Test Report Interpreter",
     page_icon="🏥",
@@ -10,7 +9,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for glassy premium look
+
 st.markdown("""
 <style>
     /* Main container styling */
@@ -84,7 +83,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Load the saved models
 try:
     diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
     heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
