@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 
-st.markdown("""
+st.markdown(
 <style>
     /* Main container styling */
     .main {
@@ -81,7 +81,7 @@ st.markdown("""
         box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37) !important;
     }
 </style>
-""", unsafe_allow_html=True)
+, unsafe_allow_html=True)
 
 try:
     diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
